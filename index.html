@@ -1,6 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <p> Hello </p>
-  </body>
+<style>
+
+body {
+  background-color: black;
+}
+
+.mark {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 100px;
+  padding-top: 8px;
+  text-align: center;
+  margin-top: 10px;
+  -webkit-animation: colorchange 20s infinite alternate;
+  border: 5px solid;
+  width: 98%;
+  background-color: #262626;
+  height: 50%;
+  margin-bottom: 5px;
+}
+
+@-webkit-keyframes colorchange {
+0% {
+  color: #bb0a1e;
+}
+10% {
+  color: #613DC1;
+}
+20% {
+  color: #3772FF;
+}
+30% {
+  color: #3943B7;
+}
+40% {
+  color: #274690;
+}
+50% {
+  color: #4392F1;
+}
+60% {
+  color: #275DAD;
+}
+70% {
+  color: #4F86C6;
+}
+80% {
+  color: #14248A;
+}
+90% {
+  color: #613DC1;
+}
+100% {
+  color: #C200FB;
+}
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #262626;
+  -webkit-animation: colorchange 20s infinite alternate;
+  border: 5px solid;
+  width: 98%;
+}
+
+li {
+  float: left;
+  -webkit-animation: colorchange 20s infinite alternate;
+  border: solid;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  font-family: Calisto MT;
+  font-size: 15px;
+  background-color: #262626;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+<title> Resume Portfolio </title>
+</style>
+<body>
+  <center><p class="mark"> Mark Wang </p></center>
+  <center><ul>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-left: none;">Home</a></li>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right:none;border-left: solid;">Contact</a></li>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right:none;border-left: solid;">Merch</a></li>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right: solid;border-left: solid;">About</a></li>
+    </ul></center>
+</body>
 </html>
