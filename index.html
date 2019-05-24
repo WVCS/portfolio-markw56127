@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<style>
-
-body {
+<head>
+  <title> Resume Portfolio </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
   background-color: black;
+  height: 100vh;
 }
-
 .mark {
   font-family: Brush Script MT, Brush Script Std, cursive;
   font-size: 100px;
@@ -15,11 +15,10 @@ body {
   -webkit-animation: colorchange 20s infinite alternate;
   border: 5px solid;
   width: 98%;
-  background-color: #262626;
+  background-color: black;
   height: 50%;
   margin-bottom: 5px;
 }
-
 @-webkit-keyframes colorchange {
 0% {
   color: #bb0a1e;
@@ -34,7 +33,7 @@ body {
   color: #3943B7;
 }
 40% {
-  color: #274690;
+  color: #B279A7;
 }
 50% {
   color: #4392F1;
@@ -46,7 +45,7 @@ body {
   color: #4F86C6;
 }
 80% {
-  color: #14248A;
+  color: #E899DC;
 }
 90% {
   color: #613DC1;
@@ -55,17 +54,15 @@ body {
   color: #C200FB;
 }
 }
-
 ul {
   list-style-type: none;
   padding: 0;
   overflow: hidden;
-  background-color: #262626;
+  background-color: black;
   -webkit-animation: colorchange 20s infinite alternate;
   border: 5px solid;
   width: 98%;
 }
-
 li {
   float: left;
   -webkit-animation: colorchange 20s infinite alternate;
@@ -76,9 +73,8 @@ li {
   border-left: none;
   font-family: Calisto MT;
   font-size: 15px;
-  background-color: #262626;
+  background-color: black;
 }
-
 li a {
   display: block;
   color: white;
@@ -86,17 +82,68 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
-
-<title> Resume Portfolio </title>
-</style>
+.txt {
+  -webkit-animation: colorchange 20s infinite alternate;
+  color: white;
+  margin-left: 15px;
+  border: 5px solid;
+  width: 96.8%;
+  padding: 10px;
+  background-color: black;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.image {
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-800%, 500%);
+  text-align: center;
+}
+.container:hover .image {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: black;
+  -webkit-animation: colorchange 20s infinite alternate;
+  border: 5px solid;
+  font-size: 16px;
+  padding: 8px;
+}
+p {
+  font-family: Times New Roman;
+  font-size: 20px;
+}
+  </style>
+</head>
 <body>
   <center><p class="mark"> Mark Wang </p></center>
+  <div class="parallax"></div>
   <center><ul>
     <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-left: none;">Home</a></li>
-    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right:none;border-left: solid;">Contact</a></li>
-    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right:none;border-left: solid;">Merch</a></li>
-    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right: solid;border-left: solid;">About</a></li>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right:none;border-left: 5px solid;">Contact</a></li>
+    <li><a href="" style="-webkit-animation: colorchange 20s infinite alternate;border-right: 5px solid;border-left: 5px solid;">About</a></li>
     </ul></center>
+  <p class="txt"> I am Mark Wang, and I am currently enrolled in Web Design and Computer Information Systems. I am profficient in using HTML and CSS, as well as many computer programs such as Microsoft Word, Google Docs, Google Sheets, Photoshop 2018, etc. Though I am newer to HTML and CSS, I believe that I am able to use them profficiently and well enough to design a website. As a freshman student at Westview Highschool, I believe that in the following years, I will improve on the use of HTML, CSS, and Javascript to be able to use them extremely profficiently and be able to easily design a good website with little to no trouble. </p>
+  <div class="container">
+    <img src="https://docs.google.com/drawings/d/e/2PACX-1vSTCgOAEhySzTlGoC9xbwuohCrpfHORPEcDs_8XlHTRps16O2yFLDM22Ig-3Zj02Bv4bnYMv652rGlx/pub?w=516&h=688" style="-webkit-animation: colorchange 20s infinite alternate; border: 5px solid;margin-left: 15px; float: left;" height="300px" width="225px"class="image">
+    <div class="middle">
+    <div class="text">Me</div>
+  </div>
+</div>
+  <p style="float: left;color: white; margin-left: 20px;-webkit-animation: colorchange 20s infinite alternate; border: 5px solid; padding: 10px; margin-top: 0;width: 83.26%;text: fluid;background-color: black;"> Hi, my name is Caleb Sun, and I enjoy playing Terraria. (I am really bad at Terraria by the way). <br> _____________________________________________________________________________________________________________________________________________________________ <br><br>
+Hi Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 </body>
-</html>
